@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    
+    <title>Contador de Energias</title>
+    
+</head>
+<body>
+    <main>
+        <header>
+            <h1>CONTADOR DE ENERGIAS</h1>
+            <p>Ferramenta desenvolvida para ajudar a contabilizar as energias do seu adversário no modo ARENA.</p>
+            <hr>
+        </header>
+    
+        <section>
+            <div class="energy">
+                <img src="assets/img/energia.svg" alt="logo-energia" height="110px">
+                <span>
+                    <b class="actual">0</b>
+                    <b>/</b>
+                    <b>10</b>
+                </span>
+                <ul>
+                    <li id="resultado"></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-counter start" onclick="start()">INICIAR</button>
+                <button class="btn-counter clear" onclick="clean()">LIMPAR</button>
+                <button class="btn-counter next" onclick="next()">NOVO TURNO</button>
+                <button class="btn-counter plus" onclick="insert(' +1')">+1</button>
+                <button class="btn-counter plus" onclick="insert(' +2')">+2</button>
+                <button class="btn-counter plus" onclick="insert(' +3')">+3</button>
+                <button class="btn-counter plus" onclick="insert(' +4')">+4</button>
+                <button class="btn-counter minus" onclick="insert(' -1')">-1</button>
+                <button class="btn-counter minus" onclick="insert(' -2')">-2</button>
+                <button class="btn-counter minus" onclick="insert(' -3')">-3</button>
+                <button class="btn-counter minus" onclick="insert(' -4')">-4</button>
+            </div>
+        </section>
+            
+        <footer>
+
+        </footer>
+    </main>
+    <script src="calc.js"></script>
+</body>
+</html>
