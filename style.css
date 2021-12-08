@@ -5,6 +5,7 @@
 
 body, html{
     font-family: 'Roboto', sans-serif;
+    background: black;
 }
 
 main{
@@ -15,9 +16,7 @@ main{
     color: white;
     
 }
-ul{
-    list-style: none;
-}
+
 button, li, span, a{
     transition: all .5s cubic-bezier(.215,.61,.355,1);
     cursor: pointer;
@@ -73,6 +72,15 @@ section{
     left: 72px;
     font-size: 28px;
 }
+.energy ul{
+    list-style: none;
+    float: left;
+    font-size: 24px;
+    color: #FFF;
+    margin: 12px 8px 12px 0px;
+    font-weight: 700;
+}
+
 .btn-counter{
     float: left;
     width: calc(25% - 10px);
